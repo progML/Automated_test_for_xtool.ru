@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
@@ -33,7 +34,8 @@ public class AuthorizationTest {
     util.customization(driver);
     util.auth(driver, util.getLogin(), "1234");
     Thread.sleep(2000);
-    assertNotNull(driver.switchTo().alert());
+    assertEquals(driver.switchTo().alert().getText(),"Не верно задан пароль");
+    driver.switchTo().alert().accept();
     driver.quit();
   }
 
