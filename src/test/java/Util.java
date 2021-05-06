@@ -13,11 +13,11 @@ public class Util {
   }
 
   public String getLogin() {
-    return "matveyles@gmail.com";
+    return "pitkun99@gmail.com";
   }
 
   public String getPassword() {
-    return "4S1FLA";
+    return "icSoL";
   }
 
   public Util() {

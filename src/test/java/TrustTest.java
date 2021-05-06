@@ -92,6 +92,18 @@ public class TrustTest {
 
   }
 
+  //todo: Як?
+//  //Проврка отправки отзывов
+//  private void sendReview(WebDriver driver) throws InterruptedException {
+//    util.customization(driver);
+//    util.auth(driver, util.getLogin(), util.getPassword());
+//    Thread.sleep(2000);
+//    util.doTrust(driver);
+//    driver.findElement(By.xpath("/html")).sendKeys("Test");
+//    driver.findElement(By.xpath("/html/body/main/div[2]/div[9]/form/table/tbody/tr[5]/td/input")).click();
+//  }
+
+
   @Before
   public void setUp() {
     util = new Util();
@@ -118,5 +130,10 @@ public class TrustTest {
     checkYandexAndGoogle(new ChromeDriver());
   }
 
+//  @Test
+//  public void sendReview() throws InterruptedException {
+//    //    sendReview(new FirefoxDriver());
+//    sendReview(new ChromeDriver());
+//  }
 
 }
