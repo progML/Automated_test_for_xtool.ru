@@ -53,6 +53,8 @@
     2) Нажать кнопку “Whios данные” 
     3) Проверить доменное имя
 
+![alt text](https://github.com/progML/Automated_test_for_xtool.ru/blob/master/result/test2.gif)
+
 
 3)	Мои проверки
   +	Зайти на сайт
@@ -66,3 +68,5 @@
   +	Нажать кнопку “Обратные ссылки”
   +	Ввести URL в поле
   +	Нажать кнопку найти.
+
+![alt text](https://github.com/progML/Automated_test_for_xtool.ru/blob/master/result/test3.gif)
