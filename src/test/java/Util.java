@@ -37,9 +37,12 @@ public class Util {
     driver.manage().timeouts().implicitlyWait(600, TimeUnit.SECONDS); // поиск элемента в течение заданного периода
     String loginPath = "//input[@name='login']";
     String passwordPath = "//input[@name='pass']";
+    String loginButton = "//a[@id='login']";
+    String lastLoginButton = "//button[@class='btn mcb' and text()='Вход']";
+    driver.findElement(By.xpath(loginButton)).click();
     driver.findElement(By.xpath(loginPath)).sendKeys(login);
     driver.findElement(By.xpath(passwordPath)).sendKeys(password);
-    driver.findElement(By.xpath("//button[text()='Войти']")).click();
+    driver.findElement(By.xpath(lastLoginButton)).click();
   }
 
   //поис сайта
